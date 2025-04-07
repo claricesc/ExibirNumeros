@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Exibir o nome das cores</h2>
+    <button onclick="exibir()">exibir</button>
+    <p id="resultado"></p>
+    <script>
+        function exibir(){
+            const cores = ['azul','rosa','verde','amarelo'];
+            let resultado = ' ';
+            for(let i = 0; i < cores.length; i++ ){
+                resultado += cores[i] + '<br>' ;
+
+            }
+            document.getElementById('resultado').innerHTML = resultado;
+            console.log(frutas.length);
+            console.log(frutas[1]);
+        }
+    </script>
+</body>
+</html>

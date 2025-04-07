@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Numeros impares ate 20</h2>
+    <button onclick="exibir()">Exibir</button>
+    <p id="result"></p>
+
+    <script>
+        //Faça enquanto o i for menor ou igual a 20
+        function exibir(){
+            let result = '';
+            let i = 1;
+            while(i<=20){
+                if(i % 2 !== 0){
+                    result += i + ' - ';
+
+                }
+                i = i + 1
+            }
+            document.getElementById('result').innerHTML=result
+        }
+    </script>
+</body>
+</html>

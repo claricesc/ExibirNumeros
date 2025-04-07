@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <h1>Exixbir os 10 primeros numeros naturais</h1>
+    <button onclick="Exibir()">Exixbir</button>
+
+    <p id="result"> </p>
+    
+    <script>
+       function Exibir() {
+            let result = ' - ' ;
+            for (let i = 1; i <= 11; i++) {
+                document.getElementById('result').innerText = result;
+                result += i;
+                console.log('teste')
+            }
+        }
+    </script>
+
+</body>
+</html>

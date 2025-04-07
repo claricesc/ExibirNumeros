@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tabuada</h1>
+        <button onclick="Tabuada()">Tabuada</button>
+        <table id="tabuada">
+            <p id="resultado2"></p>
+            </table>
+    </div>
+ 
+    <script>
+ 
+        function Tabuada() {
+    const tabuada = document.getElementById('tabuada');
+    let resultado2 = '';
+    let numero = 9;
+   
+ 
+    for (let i = 1; i <= 10; i++) {
+        resultado2 += `${numero} X ${i} = ${numero * i} <br><br>` ;
+       
+    }
+   
+   
+    document.getElementById('resultado2').innerHTML = resultado2;
+    console.log(resultado2);
+}
+    </script>
+ 
+</body>
+</html>
